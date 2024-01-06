@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>History Of Country</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <h3><a href="" class="nav__logo">COUNTRY</a></h3>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#service" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home"></section>
+
+      <!--===== TOURIST POINT =====-->
+      <section class="tourist section" id="tourist">
+        <h2 class="section-title">TOURIST POINT</h2>
+        <div class="tourist_container">
+          <!--===============================================-->
+          <div class="tourist_responsive">
+            <div class="tourist_gallery">
+              <a target="_blank" href="img/1.jpg">
+                <img
+                  src="img/1.jpg"
+                  alt="Cinque Terre"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="tourist_data">
+                <h3 class="tourist_name">Sajek Valley</h3>
+                <p class="tourist_desc">
+                  Sajek Valley is one of the most popular tourist spots in
+                  Bangladesh situated among the hills of the Kasalong range of
+                  mountains in Sajek union, Baghaichhari Upazila in Rangamati
+                  District. The valley is 2,000 feet (610 m) above sea level.
+                </p>
+              </div>
+              <div class="tourist_div">
+                <button class="tourist_button">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tourist_responsive">
+            <div class="tourist_gallery">
+              <a target="_blank" href="img/2.jpg">
+                <img src="img/2.jpg" alt="Forest" width="600" height="400" />
+              </a>
+              <div class="tourist_data">
+                <h3 class="tourist_name">Sundarbans</h3>
+                <p class="tourist_desc">
+                  Sundarbans is a mangrove area in the delta formed by the
+                  confluence of the Ganges, Brahmaputra and Meghna Rivers in the
+                  Bay of Bengal. Sundarban Reserve Forest (SRF) of Bangladesh is
+                  the largest mangrove forest in the world.
+                </p>
+              </div>
+              <div class="tourist_div">
+                <button class="tourist_button">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tourist_responsive">
+            <div class="tourist_gallery">
+              <a target="_blank" href="img/3.jpg">
+                <img
+                  src="img/3.jpg"
+                  alt="Northern Lights"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="tourist_data">
+                <h3 class="tourist_name">Mahasthan Garh</h3>
+                <p class="tourist_desc">
+                  Mahasthan Garh is one of the earliest urban archaeological
+                  sites discovered thus far in Bangladesh. The village Mahasthan
+                  in Shibganj upazila of Bogra District contains the remains of
+                  an ancient city which was called Pundranagara.
+                </p>
+              </div>
+              <div class="tourist_div">
+                <button class="tourist_button">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tourist_responsive">
+            <div class="tourist_gallery">
+              <a target="_blank" href="img/4.jpg">
+                <img src="img/4.jpg" alt="Mountains" width="600" height="400" />
+              </a>
+              <div class="tourist_data">
+                <h3 class="tourist_name">Ramu</h3>
+                <p class="tourist_desc">
+                  Ramu is a village in Bangladesh. It is the headquarters of
+                  Ramu Upazila, Cox's Bazar District located on the Baghkhali
+                  River, approximately sixteen miles from Cox's Bazar, between
+                  Cox's Bazar and Chittagong. Ramu has Mosque, pagodas,
+                  Buddhist.
+                </p>
+              </div>
+              <div class="tourist_div">
+                <button class="tourist_button">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--===============================================-->
+      </section>
+
+      <!--===== agecalculation =====-->
+      <section class="agecalculation section">
+        <div class="agecalculation__container bd-grid">
+          <div class="agecalculation__title">
+            <h2 class="section-title">AGE CALCULATION</h2>
+            <form action="" class="agecalculation__form">
+              <input
+                type="date"
+                class="agecalculation__input"
+                id="inputDob"
+                placeholder="Enter your email"
+              />
+              <!-- <a href="#" class="button">CHECK</a> -->
+              <button type="button" onclick="getDOB()" class="button">
+                CHECK
+              </button>
+            </form>
+            <br />
+            <div id="result" class="ageResult"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        
+        <!-- FOOTER START -->
+        <div class="footer">
+          <div class="contain">
+            <div class="col2">
+              <h1>COUNTRY</h1>
+              <p>
+                Bangladesh is officially the People's Republic of Bangladesh,[a] is a country in South Asia. It is the eighth-most populous country in the world and is among the most densely populated countries with a population of nearly 174 million in an area of 148,460 square kilometres (57,320 sq mi).
+              </p>
+            </div>
+            <div class="col">
+              <h1>Explore</h1>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>Get in touch</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h1>Support</h1>
+              <ul>
+                <li>Contact us</li>
+                <li>Web chat</li>
+                <li>Open ticket</li>
+              </ul>
+            </div>
+            <div class="col social">
+              <h1>Social</h1>
+              <ul>
+                <li><i class='bx bxl-facebook-circle'></i></li>
+                <li><i class="bx bxl-linkedin-square"></i></li>
+                <li><i class="bx bxl-facebook-circle"></i></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="copyright">© Copyright- Md. Saifur Rahman, All Rights Reserved</div>
+      </div>
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
